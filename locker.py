@@ -2,12 +2,20 @@ import tkinter
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
-import getpass
 import sys
 import os
 import os.path
-import pyautogui
+import subprocess 
+import getpass
 from time import sleep
+try:
+    import pyautogui
+except Exception as e:
+    print(e)
+    print('DOWNLOADING_PYAUTOGUI')
+    subprocess.run(['pip','install','pyautogui'])
+    import pyautogui
+
 
 class Locker():
 
